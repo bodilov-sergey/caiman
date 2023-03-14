@@ -1,0 +1,99 @@
+.main-btn {
+    max-width: 8.3em;
+    flex: 1 1 auto;
+    background: transparent;
+    border-radius: 0.4em;
+    font-size: 1.125em;
+    padding: 0 0.5em;
+    height: 2.6em;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    &.__fix {
+        @media (min-width: 576px) {
+            width: 8.3em;
+        }
+    }
+}
+
+.btn-bw {
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+.btn-wg {
+    border: 1px solid #fff;
+    border: none;
+    background: #fff;
+    color: #000;
+    &:hover {
+        border-color: #0db04b;
+        background: #0db04b;
+        color: #fff;
+    }
+}
+
+.btn-gw {
+    border: 1px solid #0db04b;
+    background: #0db04b;
+    color: #fff;
+    &:hover {
+        border-color: #fff;
+        background: #fff;
+        color: #000;
+    }
+}
+
+.btn-yg {
+    border: 1px solid #fef75a;
+    background: #fef75a;
+    color: #000;
+    &:hover {
+        border-color: #fff;
+        background: #333333;
+        color: #fff;
+    }
+}
+
+.control-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.5em;
+    &:before {
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        position: absolute;
+        left: 1em;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.control-input {
+    padding-left: 2em;
+    background: #333333;
+    border: 1px solid #fff;
+    border-radius: 0.4em;
+    width: 100%;
+    height: 2.4em;
+    color: #f8f9fa;
+    font-size: 1.5em;
+
+    &::placeholder {
+        color: #bebebe;
+    }
+}
+
+.control-name:before {
+    background: url(../../assets/images/switch/input_name.svg) 50% 50% / 1.5em no-repeat;
+}
+
+.control-phone:before {
+    background: url(../../assets/images/switch/input_phone.svg) 50% 50% / 1.5em no-repeat;
+}

@@ -1,0 +1,57 @@
+.bonuses {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5% -0.4em;
+    overflow: hidden;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5%;
+        width: 25%;
+        margin-bottom: 0.4em;
+        @media (min-width: 576px) {
+            width: 16.66%;
+        }
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+        @media (min-width: 992px) {
+            width: 25%;
+        }
+    }
+
+    &__pic {
+        border-radius: 8%;
+        background: #fff;
+        width: 100%;
+        border: 0.1em solid #707070;
+        padding: 5%;
+        color: #000;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7em;
+        line-height: 0;
+        font-weight: 800;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 1.5em;
+        @media (min-width: 576px) {
+            font-size: 0.8em;
+        }
+        @media (min-width: 768px) {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            display: inline;
+        }
+    }
+}

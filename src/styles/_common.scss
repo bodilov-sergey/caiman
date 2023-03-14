@@ -1,0 +1,73 @@
+body {
+    background: #000000;
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: inherit;
+        transition: 0.2s;
+    }
+}
+p {
+    margin: 0;
+}
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+input[type="radio"] {
+    display: none;
+}
+input {
+    outline: none;
+}
+.backdrop {
+    &.__opened {
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.7;
+    }
+}
+#detach-button-host {
+    display: none;
+}
+// Bootstrap-fix
+.container-fluid {
+    overflow-x: hidden;
+    max-width: 1440px;
+    //# custom
+    @media (min-width: 416px) {
+        padding: 0 3%;
+    }
+    //# custom
+    @media (min-width: 1440px) {
+        padding: 0 43.1875px;
+    }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    text-align: inherit;
+}
